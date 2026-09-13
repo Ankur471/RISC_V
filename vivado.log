@@ -1,0 +1,37 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Sat Sep  5 23:40:51 2026
+# Process ID         : 26636
+# Current directory  : D:/trainingvlsi/project_risc_v
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent12696 D:\trainingvlsi\project_risc_v\project_risc_v.xpr
+# Log file           : D:/trainingvlsi/project_risc_v/vivado.log
+# Journal file       : D:/trainingvlsi/project_risc_v\vivado.jou
+# Running On         : LAPTOP-63RP9LVC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16786 MB
+# Swap memory        : 8630 MB
+# Total Virtual      : 25417 MB
+# Available Virtual  : 9400 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/trainingvlsi/project_risc_v/project_risc_v.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at E:/Xilinx/Vivado/2024.2/data/boards/board_files/genesys2/H/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at E:/Xilinx/Vivado/2024.2/data/boards/board_files/sword/C.0/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/trainingvlsi/project_risc_v/project_risc_v.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:07 . Memory (MB): peak = 1305.941 ; gain = 210.344
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep  5 23:43:02 2026...

@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Jun 11 16:57:44 2026
+# Process ID         : 8540
+# Current directory  : D:/trainingvlsi/project_risc_v/project_risc_v.runs/synth_1
+# Command line       : vivado.exe -log Single_Cycle_Core.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Single_Cycle_Core.tcl
+# Log file           : D:/trainingvlsi/project_risc_v/project_risc_v.runs/synth_1/Single_Cycle_Core.vds
+# Journal file       : D:/trainingvlsi/project_risc_v/project_risc_v.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-63RP9LVC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13420H
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16786 MB
+# Swap memory        : 17021 MB
+# Total Virtual      : 33808 MB
+# Available Virtual  : 16369 MB
+#-----------------------------------------------------------
+source Single_Cycle_Core.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/trainingvlsi/project_risc_v/project_risc_v.srcs/utils_1/imports/synth_1/ALU_Mux.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/trainingvlsi/project_risc_v/project_risc_v.srcs/utils_1/imports/synth_1/ALU_Mux.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Single_Cycle_Core -part xc7a200tsbg484-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15076
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 881.156 ; gain = 471.531
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'PcSrc', assumed default net type 'wire' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:58]
+INFO: [Synth 8-6157] synthesizing module 'Single_Cycle_Core' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Control_unit' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Control_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Main_Decoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Main_Decoder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALUDecoder' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALUDecoder.v:1]
+INFO: [Synth 8-226] default block is never used [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALUDecoder.v:11]
+INFO: [Synth 8-226] default block is never used [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALUDecoder.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'ALUDecoder' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALUDecoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Control_unit' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Control_unit.v:1]
+INFO: [Synth 8-6157] synthesizing module 'core_datapath' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/core_datapath.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pc' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc.v:24]
+INFO: [Synth 8-6157] synthesizing module 'pc_plus_4' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc_plus_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_plus_4' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc_plus_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-226] default block is never used [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Extend.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'reg_mem_block' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/REG_MEM_BLOCK.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'reg_mem_block' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/REG_MEM_BLOCK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Mux' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Mux' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU_Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-567] referenced signal 'slt' should be on the sensitivity list [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU.v:39]
+WARNING: [Synth 8-567] referenced signal 'sltu' should be on the sensitivity list [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-7071] port 'neg' of module 'ALU' is unconnected for instance 'ALU1' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/core_datapath.v:85]
+WARNING: [Synth 8-7023] instance 'ALU1' of module 'ALU' has 6 connections declared, but only 5 given [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/core_datapath.v:85]
+INFO: [Synth 8-6157] synthesizing module 'pc_target' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc_target.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'pc_target' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/pc_target.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Result_Mux' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Result_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Result_Mux' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Result_Mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PC_Mux' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/PC_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PC_Mux' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/PC_Mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'core_datapath' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/core_datapath.v:23]
+WARNING: [Synth 8-7071] port 'Result' of module 'core_datapath' is unconnected for instance 'core_datapath_inst' [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:60]
+WARNING: [Synth 8-7023] instance 'core_datapath_inst' of module 'core_datapath' has 15 connections declared, but only 14 given [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'Single_Cycle_Core' (0#1) [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:25]
+WARNING: [Synth 8-3848] Net PCSrc in module/entity Single_Cycle_Core does not have driver. [D:/trainingvlsi/project_risc_v/project_risc_v.srcs/sources_1/new/Single_Cycle_Core.v:40]
+WARNING: [Synth 8-7129] Port Instr[6] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[5] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[4] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[3] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[2] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[1] in module core_datapath is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Instr[0] in module core_datapath is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbg484-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbg484-3
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/trainingvlsi/project_risc_v/project_risc_v.srcs/utils_1/imports/synth_1/ALU_Mux.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 987.672 ; gain = 578.047
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 4     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input   32 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1304.812 ; gain = 895.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------------+-------------------------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object                    | Inference | Size (Depth x Width) | Primitives   | 
++------------------+-------------------------------+-----------+----------------------+--------------+
+|Single_Cycle_Core | core_datapath_inst/RF/mem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------------+-------------------------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.680 ; gain = 896.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------------+-------------------------------+-----------+----------------------+--------------+
+|Module Name       | RTL Object                    | Inference | Size (Depth x Width) | Primitives   | 
++------------------+-------------------------------+-----------+----------------------+--------------+
+|Single_Cycle_Core | core_datapath_inst/RF/mem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------------+-------------------------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1305.680 ; gain = 896.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    42|
+|3     |LUT1     |     2|
+|4     |LUT2     |    67|
+|5     |LUT3     |    26|
+|6     |LUT4     |   119|
+|7     |LUT5     |    40|
+|8     |LUT6     |   291|
+|9     |RAM32M   |    10|
+|10    |RAM32X1D |     4|
+|11    |FDCE     |    30|
+|12    |IBUF     |    66|
+|13    |OBUF     |    97|
++------+---------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------+------+
+|      |Instance             |Module        |Cells |
++------+---------------------+--------------+------+
+|1     |top                  |              |   795|
+|2     |  core_datapath_inst |core_datapath |   630|
+|3     |    ALU1             |ALU           |    32|
+|4     |    PC1              |pc            |    58|
+|5     |    RF               |reg_mem_block |   540|
++------+---------------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.168 ; gain = 1007.543
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1429.230 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete | Checksum: d210fab5
+INFO: [Common 17-83] Releasing license: Synthesis
+47 Infos, 15 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1550.340 ; gain = 1144.949
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1550.340 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/trainingvlsi/project_risc_v/project_risc_v.runs/synth_1/Single_Cycle_Core.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file Single_Cycle_Core_utilization_synth.rpt -pb Single_Cycle_Core_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 11 16:58:06 2026...
